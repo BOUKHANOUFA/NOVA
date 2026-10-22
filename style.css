@@ -17,9 +17,6 @@ body::after{
     height: 100%;
     background: #ff1493 ;
     
-    
-    
-
     position: absolute;
     z-index: -1;
     clip-path: circle(35% at right 70%);
@@ -49,4 +46,15 @@ nav .logo{
     letter-spacing: 3px;
     text-transform: uppercase;
 
+}
+nav ul li {
+   display: inline-block;
+   margin: 0 6px;
+   
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
 }
