@@ -29,6 +29,7 @@ body::after{
     height: 80%;
     background-color:rgba(255,255,255,0.1) ;
     border-radius: 20px;
+    overflow: hidden;
 }
 nav{
     display: flex;
@@ -57,7 +58,74 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
+    transition: 0.5s;
 }
 nav ul li a:hover{
-    color: hwb(328 45% 31%) ;
+    background: linear-gradient(
+        135deg,
+        #FF1493,
+        #9D00FF,
+        #304FFE
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+   
+}
+.content .text{
+    color: white;
+    width: 40%;
+}
+.content .text h2{
+    width: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.content .text p{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 10px;
+    letter-spacing: 1px;
+
+}
+.content .image{
+    width: 40%;
+   
+
+}
+.content .image img{
+    width: 400px;
+}
+.content .button{
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-flex;
+    height: 20px;
+    background: linear-gradient(
+        135deg,
+        #FF1493,
+        #9D00FF,
+        #304FFE
+    );
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(157, 0, 255, 0.4);
+    transition: 0.5s;
+    
+}
+.content .button:hover{
+    transform: scale(1.05s);
+
 }
